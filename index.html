@@ -16,6 +16,7 @@
     <!------------------------- PROPIOS ESTILOS----------------------------------->
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/Estilos.css">
+    <link rel="shortcut icon" href="Logos\Medios de Pago\logo.png"> 
  
 </head>
 
@@ -37,7 +38,7 @@
           <img class="imagenLogo img__aniImag" src="Logos\Logo PYME\Logo.png" alt="StellaCocina"></a>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 subrayado">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active text-white" href="index.html">Inicio</a></li>
 
@@ -117,13 +118,14 @@
                 <hr class="dropdown-divider">
 
                 <!--------------------------------- Carrito de compras ---------------------------------->
-                <a class="nav-link active" href="Comprar.html">
-                <img class="img__aniImag" src="Logos\Medios de Pago\baseline_shopping_cart_black_18dp.png" alt="StellaCocina"></a>
+                
+                <img class="img__aniImag redesInstagram" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal20" src="Logos\Medios de Pago\carrito7.png" alt="StellaCocina">
 
-            </div>
+          </div>
         </div>
-      </nav>
-    </header>
+      </nav>      
+    </header>      
+
     <!------------------------------------ Fin Header ------------------------------->
 
     <!------------------------------------ Carousel Fotos --------------------------->
@@ -189,66 +191,62 @@
     </section>
     <!----------------------------------- Fin Carousel Fotos --------------------------->
 
-    <!-------------------------------- Segunda Seccion ---------------------------------->
+    <!-------------------------------- Recomendaciones ---------------------------------->
 
-    <section class="table-responsive body__border">
-      <h2>Recomendaciones <span class="animacionColor badge">New</span></h2>
-        <form>
-          <table class="recomendados">
-            <tr>
-              <th><img src="Imagenes\Panes\Baguette.jpg" class="inicioRecomendados img-thumbnail img__aniImag" alt="Panes"/></th>
+    <h2>Recomendaciones <span class="animacionColor badge">New</span></h2>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 ms-auto modalFlex">
+            <li id="Baguette"><img src="Imagenes/Panes/Baguette.jpg" class="inicioRecomendados img-thumbnail img__aniImag"/>
+            </li>
 
-              <th><img src="Imagenes\Tortas\Inicio Tortas.jpg" class="inicioRecomendados img-thumbnail img__aniImag" alt="Tortas"/></th>
+            <li>
+              <a href="Productos.html#Panes">
+                <input type="button" name="boton" value="Panes" class="body__centrarBotones"/>
+              </a>
+            </li>
+        </div>
 
-              <th><img src="Imagenes\Dulces\Pepas.jpg" class="inicioRecomendados img-thumbnail img__aniImag" alt="Dulces"/></th>
+        <div class="col-md-3 ms-auto modalFlex">
+            <li id="Tortas"><img src="Imagenes\Tortas\rogel.jpg" class="inicioRecomendados img-thumbnail img__aniImag" alt="Tortas"/>
+            </li>
 
-              <th><img src="Imagenes\Salados\Pizzas.jpg" class="inicioRecomendados img-thumbnail img__aniImag" alt="Salados"/></th>
-            </tr>
+            <li>
+              <a href="Productos.html#Tortas">
+                <input type="button" name="boton" value="Tortas" class="body__centrarBotones"/>
+              </a>
+            </li>
+        </div>
 
-            <tr>
-              <td>
-                <div>
-                  <a href="Productos.html#Panes">
-                    <input type="button" name="boton" value="Panes" class="body__centrarBotones"/>
-                  </a>
-                </div>
-              </td>
+        <div class="col-md-3 ms-auto modalFlex">
+            <li id="Dulces"><img src="Imagenes\Dulces\Pepas.jpg" class="inicioRecomendados img-thumbnail img__aniImag" alt="Dulces"/>
+            </li>
 
-              <td>
-                <div>
-                  <a href="Productos.html#Tortas">
-                    <input type="button" name="boton" value="Tortas" class="body__centrarBotones"/>
-                  </a>
-                </div>
-              </td>
+            <li>
+              <a href="Productos.html#Dulces">
+                <input type="button" name="boton" value="Dulces" class="body__centrarBotones"/>
+              </a>
+            </li>
+        </div>
 
-              <td>
-                <div>
-                  <a href="Productos.html#Dulces">
-                    <input type="button" name="boton" value="Dulces" class="body__centrarBotones"/>
-                  </a>
-                </div>
-              </td>
+        <div class="col-md-3 ms-auto modalFlex">
+            <li id="Salados"><img src="Imagenes\Salados\Pizzas.jpg" class="inicioRecomendados img-thumbnail img__aniImag" alt="Salados"/>
+            </li>
 
-              <td>
-                <div>
-                  <a href="Productos.html#Salados">
-                    <input type="button" name="boton" value="Salados" class="body__centrarBotones"/>
-                  </a>
-                </div>
-              </td>
-            </tr>
-          </table>
-        </form>
+            <li>
+              <a href="Productos.html#Salados">
+                <input type="button" name="boton" value="Salados" class="body__centrarBotones"/>
+              </a>
+            </li>
+        </div>
+      </div>
 
-      <!-------------------- BOTON PARA VER TODOS LOS PRODUCTOS -------------------------->
-
-        <div>
+      <div>
           <a href="Productos.html">
               <input type="button" name="boton" value="Ver todos los Productos" class="body__centrarBotones"/>
             </a>
-        </div>
-    </section>
+      </div>
+    </div>
 
     <!----------------------------------- Tercera Seccion -------------------------------->
 
@@ -260,25 +258,36 @@
         <form class="flexAside">
 
           <div class="input-group">
-            <span class="input-group-text"><h6>Nombre y Apellido:</h6></span>
+            <span class="input-group-text"><h6>Nombre:</h6></span>
             <input type="name" name="Nombre" aria-label="Nombre" class="form-control" placeholder="Nombre">
+          </div>
+
+          <div class="input-group">
+            <span class="input-group-text"><h6>Apellido:</h6></span>
             <input type="name" name="Apellido" aria-label="Apellido" class="form-control" placeholder="Apellido">
           </div>
 
-          <div class="input-group mb-3">
+          <div class="input-group">
             <span class="input-group-text" id="inputGroup-sizing-default"><h6>Email:</h6></span>
             <input type="name" name="Email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="nombre@ejemplo.com">
           </div>
 
     <!------------------------------------ COMENTARIOS ----------------------------------------->
 
-          <div class="mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default"><h6>Desea recibir informacion?</span></h6>
-              <input type="checkbox" name="acepta" value="1">
+          <div class="container-fluid">
+            <div class="row input-group-text modalFlex">
+            
+              <li class="input-group">
+                <span><h6>Desea recibir Informaciòn?
+                <input class="form-check-input" type="checkbox" value="1" aria-label="Checkbox for following text input"></span></h6>
+              </li>
 
-          
-            <label for="exampleFormControlTextarea1" class="form-label"></label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ingrese su comentario"></textarea>
+              <li class="input-group">
+                <label for="exampleFormControlTextarea1" class="form-label"></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ingrese su comentario"></textarea>
+              </li>
+
+            </div>
           </div>
       
     <!---------------------- BOTONES PARA LIMPIAR Y ENVIAR FORMULARIO -------------------------->
@@ -294,18 +303,24 @@
     <!--------------------------------- Redes Sociales ------------------------------------->
 
     <section class="body__border">
-      <h2>Siguenos:</h2>
-        <div> 
-          <a href="https://www.facebook.com/"/>
-            <img src="Logos\Logos redes sociales\Facebook.png" alt="facebook" class="redesFacebook"/></a>
-          <a href="https://instagram.com/estelacocina.ve?igshid=2zspqbnyfhmv"/>
+      <h2>Redes Sociales</h2>
+        <div class="paddingRedes"> 
+          <a class="margenContacto" href="https://www.facebook.com/"/>
+            <img src="Logos\Logos redes sociales\Facebook.png" alt="facebook" class="redesInstagram"/></a>
+          <a class="margenContacto" href="https://instagram.com/estelacocina.ve?igshid=2zspqbnyfhmv"/>
             <img src="Logos\Logos redes sociales\Instagram.png" alt="instagram" class="redesInstagram"/></a>
         </div>
-    </<section>
+    </section>
       
     <!----------------------------------- Pie de Pagina ---------------------------------->
 
     <footer class="body__border">
+
+          <div class="iconoWhatsapp">
+            <a href="https://api.whatsapp.com/send?phone=+5491141681891">
+            <img class="imagenWhatsapp img__aniImag" src="Logos\Logos redes sociales\Whatsapp1.png"></a>
+          </div>
+
 
           <div class="nuevoPie list-group" id="myList" role="tablist">
             <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#menu" role="tab"><h5>Menù</h5></a>
@@ -378,19 +393,19 @@
 
                 <div class="tab-pane" id="contacto" role="tabpanel">
                     <ul class="list-group">
-                      <li>
+                      <li class="margenContacto">
                           <a href="https://accounts.google.com/" class="pieLetras">
-                            <img src="Logos\Logos redes sociales\correo.png" alt="correo" class="mediosPago"/>stellacocina@gmail</a>
+                            <img src="Logos\Logos redes sociales\correo.png" alt="correo" class="redesInstagram"/>   stellacocina@gmail</a>
                       </li>
 
-                      <li>
+                      <li class="margenContacto">
                         <a href="+5491141681891" class="pieLetras">
-                          <img src="Logos\Logos redes sociales\Whatsapp.png" alt="whatsapp" class="mediosPago"/>+5491141681891</a>
+                          <img src="Logos\Logos redes sociales\Whatsapp.png" alt="whatsapp" class="redesInstagram"/>   +5491141681891</a>
                       </li>
 
-                      <li>
+                      <li class="margenContacto">
                         <a href="https://instagram.com/estelacocina.ve?igshid=2zspqbnyfhmv" class="pieLetras">
-                          <img src="Logos\Logos redes sociales\Instagram.png" alt="instagram" class="mediosPago"/>@estelacocina.ve</a>
+                          <img src="Logos\Logos redes sociales\Instagram.png" alt="instagram" class="redesInstagram"/>   @estelacocina.ve</a>
                       </li>
                     </ul>
                 </div>

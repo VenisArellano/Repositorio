@@ -1,7 +1,6 @@
       // Header //
 $color-rosa: #FF9191;
 $color-blanco: #FFFFFF;
-$ancho: 230px;
 $ancho-logo: 50px;
 $altura-logo: 50px;
 
@@ -98,15 +97,6 @@ nav {
 		text-align: center;
 		flex: auto;
 		list-style-position: center;
-	}
-}
-
-
-ul {
-
-	&.subrayado {
-
-		width: $ancho*2;
 	}
 }
 

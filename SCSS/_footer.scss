@@ -77,6 +77,36 @@ footer {
 
 	color: $color-blanco;
 	text-decoration: none;
+	font-family: $font-botones-titulos;
 }
 
+
+.margenContacto {
+
+	margin: 10px;
+}
+
+
+.paddingRedes {
+
+	padding: 0px 0px 20px 0px;
+}
+
+
+.iconoWhatsapp {
+
+	position: fixed;
+	right: 10px; 
+	bottom: 10px;
+	text-align: center;
+	padding: 3px;
+	z-index: 2;
+}
+
+
+.imagenWhatsapp {
+
+	width: 50px; 
+	height: 50px;
+}
 

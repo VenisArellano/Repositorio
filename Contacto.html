@@ -16,6 +16,7 @@
     <!------------------------- PROPIOS ESTILOS----------------------------------->
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/Estilos.css">
+    <link rel="shortcut icon" href="Logos\Medios de Pago\logo.png"> 
  
 </head>
 
@@ -37,7 +38,7 @@
           <img class="imagenLogo img__aniImag" src="Logos\Logo PYME\Logo.png" alt="StellaCocina"></a>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 subrayado">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active text-white" href="index.html">Inicio</a></li>
 
@@ -116,14 +117,15 @@
 
                 <hr class="dropdown-divider">
 
-                <!--------------------------------- Carrito de compras ---------------------------------->
-                <a class="nav-link active" href="Comprar.html">
-                <img class="img__aniImag" src="Logos\Medios de Pago\baseline_shopping_cart_black_18dp.png" alt="StellaCocina"></a>
+              <!--------------------------------- Carrito de compras ---------------------------------->
+                
+                <img class="img__aniImag redesInstagram" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal20" src="Logos\Medios de Pago\carrito7.png" alt="StellaCocina">
 
-            </div>
+          </div>
         </div>
-      </nav>
-    </header>
+      </nav>      
+    </header>      
+
     <!------------------------------------ Fin Header ------------------------------->
 
     <!-------------------------- Breadcrumb ---------------------------->
@@ -138,23 +140,32 @@
 	<!----------------------------------------CONTACTO-------------------------------------->
 
 	<h2>Contacto</h2>
+    <div class="container-fluid">
+      <div class="row">
 
-		<table class="table-responsive recomendados">
-				<tr>
-					<th>
-						<a href="Envios.html">
-						<img src="Logos\Logos redes sociales\ubicacion.png" alt="ubicacion" class="mediosPago"/>Lorenzo Lopez 950, Pilar, Buenos Aires</a>
-					</th>
-					<th>
-						<a href="https://instagram.com/estelacocina.ve?igshid=2zspqbnyfhmv">
-						<img src="Logos\Logos redes sociales\Instagram.png" alt="instagram" class="mediosPago"/>@estelacocina.ve</a>
-					</th>
-					<th>
-						<a href="+5491141681891">
-						<img src="Logos\Logos redes sociales\Whatsapp.png" alt="whatsapp" class="mediosPago"/>+5491141681891</a>
-					</th>
-				</tr>
-			</table>
+        <div class="col-md-3 ms-auto modalFlex margenContacto">
+		      <li>
+						<a class="iconosContacto" href="Envios.html">
+						<img src="Logos\Logos redes sociales\ubicacion.png" alt="ubicacion" class="redesInstagram"/>  Lorenzo Lopez 950, Pilar, Buenos Aires</a>
+          </li>
+        </div>
+
+        <div class="col-md-3 ms-auto modalFlex margenContacto">
+          <li>
+						<a class="iconosContacto" href="https://instagram.com/estelacocina.ve?igshid=2zspqbnyfhmv">
+						<img src="Logos\Logos redes sociales\Instagram.png" alt="instagram" class="redesInstagram"/>  @estelacocina.ve</a>
+          </li>
+        </div>
+					
+				<div class="col-md-3 ms-auto modalFlex margenContacto">
+          <li>
+						<a class="iconosContacto" href="https://api.whatsapp.com/send?phone=+5491141681891">
+						<img src="Logos\Logos redes sociales\Whatsapp.png" alt="whatsapp" class="redesInstagram"/>  +5491141681891</a>
+          </li>
+        </div>
+      </div>
+    </div>
+					
 
 			<!--------------------------------- FORMULARIO ----------------------------------->
 
@@ -231,6 +242,12 @@
 
     <footer class="body__border">
 
+          <div class="iconoWhatsapp">
+            <a href="https://api.whatsapp.com/send?phone=+5491141681891">
+            <img class="imagenWhatsapp img__aniImag" src="Logos\Logos redes sociales\Whatsapp1.png"></a>
+          </div>
+
+
           <div class="nuevoPie list-group" id="myList" role="tablist">
             <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#menu" role="tab"><h5>Menù</h5></a>
 
@@ -302,19 +319,19 @@
 
                 <div class="tab-pane" id="contacto" role="tabpanel">
                     <ul class="list-group">
-                      <li>
+                      <li class="margenContacto">
                           <a href="https://accounts.google.com/" class="pieLetras">
-                            <img src="Logos\Logos redes sociales\correo.png" alt="correo" class="mediosPago"/>stellacocina@gmail</a>
+                            <img src="Logos\Logos redes sociales\correo.png" alt="correo" class="redesInstagram"/>   stellacocina@gmail</a>
                       </li>
 
-                      <li>
+                      <li class="margenContacto">
                         <a href="+5491141681891" class="pieLetras">
-                          <img src="Logos\Logos redes sociales\Whatsapp.png" alt="whatsapp" class="mediosPago"/>+5491141681891</a>
+                          <img src="Logos\Logos redes sociales\Whatsapp.png" alt="whatsapp" class="redesInstagram"/>   +5491141681891</a>
                       </li>
 
-                      <li>
+                      <li class="margenContacto">
                         <a href="https://instagram.com/estelacocina.ve?igshid=2zspqbnyfhmv" class="pieLetras">
-                          <img src="Logos\Logos redes sociales\Instagram.png" alt="instagram" class="mediosPago"/>@estelacocina.ve</a>
+                          <img src="Logos\Logos redes sociales\Instagram.png" alt="instagram" class="redesInstagram"/>   @estelacocina.ve</a>
                       </li>
                     </ul>
                 </div>
